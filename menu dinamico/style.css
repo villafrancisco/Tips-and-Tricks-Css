@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  height: 50px;
+  background-color: black;
+  margin: 0 auto;
+}
+nav ul {
+  margin-right: 35px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: red;
+  padding: 0 15px;
+  display: block;
+  line-height: 20px;
+  font-size: 18px;
+  background: black;
+}
+nav ul ul {
+  position: absolute;
+  top: 50px;
+  border-top: 3px brown solid;
+}
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px brown solid;
+  border-top: none;
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -50px;
+  left: 120px;
+}

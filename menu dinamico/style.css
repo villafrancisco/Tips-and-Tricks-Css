@@ -11,25 +11,40 @@ nav {
   height: 50px;
   background-color: black;
   margin: 0 auto;
+  width: 60%;
 }
-nav ul {
-  margin-right: 35px;
-}
-nav ul li {
+
+nav > ul li {
   display: inline-block;
 }
 nav ul li a {
-  color: red;
-  padding: 0 15px;
+  color: beige;
+  padding: 15px;
   display: block;
   line-height: 20px;
   font-size: 18px;
   background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.4s;
 }
+nav ul li a:hover,
+nav ul li a.activar {
+  color: brown;
+}
+nav ul li:hover > ul {
+  /* top: 50px; */
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+
 nav ul ul {
   position: absolute;
   top: 50px;
   border-top: 3px brown solid;
+  opacity: 0;
+  visibility: hidden;
 }
 nav ul ul li {
   width: 150px;
@@ -47,5 +62,5 @@ nav ul ul ul {
 nav ul ul ul li {
   position: relative;
   top: -50px;
-  left: 120px;
+  left: 150px;
 }

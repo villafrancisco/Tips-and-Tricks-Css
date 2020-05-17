@@ -1,41 +1,37 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-nav {
-  background-color: black;
-  margin: 0 auto;
-  width: 60%;
-}
-.menu_principal li {
-  line-height: 35px;
 }
 
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: black;
+  border-radius: 15px 15px;
+  width: 60%;
+  margin: 15px auto;
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
 nav > ul li {
   display: inline-block;
 }
 nav ul li a {
   color: beige;
-
   display: block;
-
   font-size: 16px;
-  background: black;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition: 0.4s;
+  padding: 15px;
+  /*background: black;*/
 }
 nav ul li a:hover,
 nav ul li a.activar {
   color: brown;
 }
 nav ul li:hover > ul {
-  /* top: 50px; */
   opacity: 1;
   visibility: visible;
   transition: 0.3s linear;
@@ -43,7 +39,6 @@ nav ul li:hover > ul {
 
 nav ul ul {
   position: absolute;
-
   border-top: 3px brown solid;
   opacity: 0;
   visibility: hidden;
@@ -56,13 +51,14 @@ nav ul ul li {
   border-top: none;
 }
 nav ul ul li a {
-  line-height: 30px;
+  padding: 15px;
+  background-color: black;
 }
 nav ul ul ul {
   border-top: none;
 }
 nav ul ul ul li {
   position: relative;
-  top: -30px;
+  top: -50px;
   left: 150px;
 }

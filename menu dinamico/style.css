@@ -78,27 +78,32 @@ nav ul ul ul li {
 .main-menu > li > a::before,
 .main-menu > li > a::after {
   content: "";
-  display: block;
   position: absolute;
-  width: 80%;
-  height: 2px;
-  background: brown;
+  width: 100%;
+  height: 60%;
+
   opacity: 0;
   visibility: hidden;
-  margin: 3px 0px;
-  transition: transform 1s;
+  margin: 10px 0px;
+  transition: transform 0.4s;
 }
 .main-menu > li > a::before {
-  top: 2rem;
-  transform: translateX(-100%);
+  top: 0;
+  right: 0;
+  border-top: 1px solid brown;
+  border-right: 2px solid brown;
+  transform: translate(-100%, 50%);
 }
 .main-menu > li > a::after {
-  bottom: 2rem;
-  transform: translateX(100%);
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid brown;
+  border-left: 2px solid brown;
+  transform: translate(100%, -50%);
 }
 .main-menu > li > a:hover::before,
 .main-menu > li > a:hover::after {
-  transform: translateX(0);
+  transform: translate(0%, 0%);
   opacity: 1;
   visibility: visible;
 }

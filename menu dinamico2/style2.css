@@ -23,7 +23,7 @@ body {
   letter-spacing: 5px;
   border-radius: 30px;
 }
-
+/* Animacion */
 .main-menu_item {
   position: relative;
   cursor: pointer;
